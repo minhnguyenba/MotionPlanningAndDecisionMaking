@@ -1,0 +1,18 @@
+1. Error when run carla simulation
+
+LowLevelFatalError [File:Unknown] [Line: 102] 
+Exception thrown: bind: Address already in use
+Signal 11 caught.
+Malloc Size=65538 LargeMemoryPoolOffset=65554 
+CommonUnixCrashHandler: Signal=11
+Malloc Size=65535 LargeMemoryPoolOffset=131119 
+Malloc Size=147680 LargeMemoryPoolOffset=278816 
+Engine crash handling finished; re-raising signal 11 for the default handler. Good bye.
+Segmentation fault (core dumped)
+
+※ Cause: there are some carlar objects are running. You should kill them all and restart carla simulation again
+ps -aux | grep carla
+# Use the IDs displayed in the output of the last command. 
+kill id  
+
+Or you can restart Virtual Machine to fix this problem.
