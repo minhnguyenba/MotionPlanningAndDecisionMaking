@@ -21,6 +21,7 @@ https://github.com/udacity/nd013-c5-planning-starter/blob/master/README.md
 I used the Virtual Machine that supplied by Udacity to do my project.
 You should install Github CLI to clone the project easier:
 > sudo apt update
+
 > sudo apt install gh
 
 ## Simulation Results
